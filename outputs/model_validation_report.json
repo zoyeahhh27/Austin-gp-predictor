@@ -1,0 +1,338 @@
+[
+  {
+    "mode": "prequal",
+    "features": [
+      "season",
+      "round",
+      "driver_races_before",
+      "driver_avg_finish_last3",
+      "driver_avg_finish_last5",
+      "driver_points_last3",
+      "driver_points_last5",
+      "driver_win_rate_last5",
+      "driver_podium_rate_last5",
+      "driver_dnf_rate_last5",
+      "driver_disqualification_rate_last5",
+      "driver_championship_points_pre",
+      "driver_championship_position_pre",
+      "constructor_championship_points_pre",
+      "constructor_championship_position_pre",
+      "constructor_points_last3",
+      "constructor_avg_finish_last3",
+      "austin_starts_before",
+      "austin_first_timer",
+      "austin_avg_finish_before",
+      "austin_wins_before",
+      "austin_podiums_before",
+      "sprint_points_previous_rounds",
+      "driver_id",
+      "constructor_id",
+      "circuit_id"
+    ],
+    "zero_score_diagnostic": {
+      "original_exact_zero_rows": 333,
+      "smoothed_exact_zero_rows": 0,
+      "epsilon": 1e-06,
+      "ranking_changed": false
+    },
+    "baselines": [
+      {
+        "baseline_column": "driver_championship_points_pre",
+        "original_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_championship_points_pre",
+          "baseline_top1_accuracy": 0.4537037037037037,
+          "baseline_top3_accuracy": 0.7592592592592593
+        },
+        "smoothed_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_championship_points_pre",
+          "baseline_top1_accuracy": 0.4537037037037037,
+          "baseline_top3_accuracy": 0.7592592592592593
+        }
+      },
+      {
+        "baseline_column": "driver_points_last5",
+        "original_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_points_last5",
+          "baseline_top1_accuracy": 0.4444444444444444,
+          "baseline_top3_accuracy": 0.7129629629629629
+        },
+        "smoothed_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_points_last5",
+          "baseline_top1_accuracy": 0.4444444444444444,
+          "baseline_top3_accuracy": 0.7129629629629629
+        }
+      },
+      {
+        "baseline_column": "driver_avg_finish_last5",
+        "original_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_avg_finish_last5",
+          "baseline_top1_accuracy": 0.3888888888888889,
+          "baseline_top3_accuracy": 0.6851851851851852
+        },
+        "smoothed_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.4722222222222222,
+          "model_top3_accuracy": 0.7592592592592593,
+          "model_mean_reciprocal_rank": 0.6405423280423279,
+          "model_mean_winner_rank": 2.435185185185185,
+          "baseline_column": "driver_avg_finish_last5",
+          "baseline_top1_accuracy": 0.3888888888888889,
+          "baseline_top3_accuracy": 0.6851851851851852
+        }
+      }
+    ],
+    "top_feature_importance": [
+      {
+        "feature": "numeric__driver_points_last5",
+        "importance": 0.09677879715469596
+      },
+      {
+        "feature": "numeric__driver_points_last3",
+        "importance": 0.09502752586226836
+      },
+      {
+        "feature": "numeric__constructor_points_last3",
+        "importance": 0.07926537410318406
+      },
+      {
+        "feature": "numeric__driver_podium_rate_last5",
+        "importance": 0.06632403071831071
+      },
+      {
+        "feature": "numeric__driver_championship_position_pre",
+        "importance": 0.06575513598233561
+      },
+      {
+        "feature": "numeric__driver_avg_finish_last5",
+        "importance": 0.0639841178248056
+      },
+      {
+        "feature": "numeric__constructor_avg_finish_last3",
+        "importance": 0.058922841715638954
+      },
+      {
+        "feature": "numeric__constructor_championship_position_pre",
+        "importance": 0.05191230783345452
+      },
+      {
+        "feature": "numeric__driver_avg_finish_last3",
+        "importance": 0.04795453646127641
+      },
+      {
+        "feature": "numeric__driver_win_rate_last5",
+        "importance": 0.046877896061662455
+      },
+      {
+        "feature": "numeric__constructor_championship_points_pre",
+        "importance": 0.04156506879978444
+      },
+      {
+        "feature": "numeric__driver_championship_points_pre",
+        "importance": 0.03336345398916115
+      },
+      {
+        "feature": "numeric__austin_avg_finish_before",
+        "importance": 0.030730398236480296
+      },
+      {
+        "feature": "numeric__austin_podiums_before",
+        "importance": 0.028923261847060545
+      },
+      {
+        "feature": "numeric__driver_races_before",
+        "importance": 0.021597927224221335
+      },
+      {
+        "feature": "numeric__sprint_points_previous_rounds",
+        "importance": 0.017549897855885167
+      },
+      {
+        "feature": "numeric__round",
+        "importance": 0.015466501564793667
+      },
+      {
+        "feature": "numeric__austin_starts_before",
+        "importance": 0.012769241078698347
+      },
+      {
+        "feature": "numeric__season",
+        "importance": 0.011497859336778377
+      },
+      {
+        "feature": "numeric__austin_wins_before",
+        "importance": 0.011354531226543943
+      }
+    ]
+  },
+  {
+    "mode": "postqual",
+    "features": [
+      "season",
+      "round",
+      "driver_races_before",
+      "driver_avg_finish_last3",
+      "driver_avg_finish_last5",
+      "driver_points_last3",
+      "driver_points_last5",
+      "driver_win_rate_last5",
+      "driver_podium_rate_last5",
+      "driver_dnf_rate_last5",
+      "driver_disqualification_rate_last5",
+      "driver_championship_points_pre",
+      "driver_championship_position_pre",
+      "constructor_championship_points_pre",
+      "constructor_championship_position_pre",
+      "constructor_points_last3",
+      "constructor_avg_finish_last3",
+      "austin_starts_before",
+      "austin_first_timer",
+      "austin_avg_finish_before",
+      "austin_wins_before",
+      "austin_podiums_before",
+      "sprint_points_previous_rounds",
+      "qualifying_position",
+      "grid_position",
+      "driver_id",
+      "constructor_id",
+      "circuit_id"
+    ],
+    "zero_score_diagnostic": {
+      "original_exact_zero_rows": 397,
+      "smoothed_exact_zero_rows": 0,
+      "epsilon": 1e-06,
+      "ranking_changed": false
+    },
+    "baselines": [
+      {
+        "baseline_column": "qualifying_position",
+        "original_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.5555555555555556,
+          "model_top3_accuracy": 0.9074074074074074,
+          "model_mean_reciprocal_rank": 0.7260802469135803,
+          "model_mean_winner_rank": 1.8333333333333333,
+          "baseline_column": "qualifying_position",
+          "baseline_top1_accuracy": 0.5925925925925926,
+          "baseline_top3_accuracy": 0.8981481481481481
+        },
+        "smoothed_scores": {
+          "races_evaluated": 108,
+          "model_top1_accuracy": 0.5555555555555556,
+          "model_top3_accuracy": 0.9074074074074074,
+          "model_mean_reciprocal_rank": 0.7260802469135803,
+          "model_mean_winner_rank": 1.8333333333333333,
+          "baseline_column": "qualifying_position",
+          "baseline_top1_accuracy": 0.5925925925925926,
+          "baseline_top3_accuracy": 0.8981481481481481
+        }
+      }
+    ],
+    "top_feature_importance": [
+      {
+        "feature": "numeric__qualifying_position",
+        "importance": 0.12445483895707486
+      },
+      {
+        "feature": "numeric__grid_position",
+        "importance": 0.0989604894893215
+      },
+      {
+        "feature": "numeric__driver_points_last5",
+        "importance": 0.08162761764220125
+      },
+      {
+        "feature": "numeric__driver_points_last3",
+        "importance": 0.08136043723169052
+      },
+      {
+        "feature": "numeric__driver_avg_finish_last5",
+        "importance": 0.06382270471164123
+      },
+      {
+        "feature": "numeric__driver_championship_position_pre",
+        "importance": 0.05334693308229341
+      },
+      {
+        "feature": "numeric__driver_podium_rate_last5",
+        "importance": 0.05230716571065339
+      },
+      {
+        "feature": "numeric__constructor_points_last3",
+        "importance": 0.05215973359043379
+      },
+      {
+        "feature": "numeric__constructor_avg_finish_last3",
+        "importance": 0.041857720915529445
+      },
+      {
+        "feature": "numeric__driver_avg_finish_last3",
+        "importance": 0.03849244343522687
+      },
+      {
+        "feature": "numeric__driver_championship_points_pre",
+        "importance": 0.03177647068134914
+      },
+      {
+        "feature": "numeric__austin_avg_finish_before",
+        "importance": 0.027735170922479683
+      },
+      {
+        "feature": "numeric__constructor_championship_position_pre",
+        "importance": 0.02771570593129789
+      },
+      {
+        "feature": "numeric__driver_win_rate_last5",
+        "importance": 0.02731506636676769
+      },
+      {
+        "feature": "numeric__constructor_championship_points_pre",
+        "importance": 0.023201858643066283
+      },
+      {
+        "feature": "numeric__austin_podiums_before",
+        "importance": 0.018929498669029127
+      },
+      {
+        "feature": "numeric__driver_races_before",
+        "importance": 0.01602222920096055
+      },
+      {
+        "feature": "numeric__round",
+        "importance": 0.012337767750910493
+      },
+      {
+        "feature": "numeric__sprint_points_previous_rounds",
+        "importance": 0.01211722213372664
+      },
+      {
+        "feature": "categorical__constructor_id_mercedes",
+        "importance": 0.011849789060604816
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+predicted_rank,driver_id,driver_name,constructor,normalized_model_score
+1,max_verstappen,Max Verstappen,Red Bull,0.33947262103099823
+2,antonelli,Andrea Kimi Antonelli,Mercedes,0.19604762903950115
+3,leclerc,Charles Leclerc,Ferrari,0.12594026067673836
+4,russell,George Russell,Mercedes,0.12431339144161488
+5,hamilton,Lewis Hamilton,Ferrari,0.0986786968129216
+6,norris,Lando Norris,McLaren,0.04697412159993484
+7,hadjar,Isack Hadjar,Red Bull,0.03615091319300013
+8,piastri,Oscar Piastri,McLaren,0.01717576329493504
+9,colapinto,Franco Colapinto,Alpine F1 Team,0.005368711453512063
+10,stroll,Lance Stroll,Aston Martin,0.0037668871569465174
+11,sainz,Carlos Sainz,Williams,0.0014375074067710194
+12,lawson,Liam Lawson,RB F1 Team,0.0013544767314754827
+13,albon,Alexander Albon,Williams,0.0010526649728622218
+14,bottas,Valtteri Bottas,Cadillac F1 Team,0.0010526649728622218
+15,gasly,Pierre Gasly,Alpine F1 Team,0.0007397529202134499
+16,bearman,Oliver Bearman,Haas F1 Team,0.00047040791040265826
+17,alonso,Fernando Alonso,Aston Martin,5.882308850082098e-07
+18,ocon,Esteban Ocon,Haas F1 Team,5.882308850082098e-07
+19,perez,Sergio Pérez,Cadillac F1 Team,5.882308850082098e-07
+20,bortoleto,Gabriel Bortoleto,Audi,5.882308850082098e-07
+21,arvid_lindblad,Arvid Lindblad,RB F1 Team,5.882308850082098e-07
+22,hulkenberg,Nico Hülkenberg,Audi,5.882308850082098e-07
