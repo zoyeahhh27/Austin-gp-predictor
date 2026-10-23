@@ -159,6 +159,171 @@ div[data-testid="stDataFrame"] { border:1px solid #202a33; border-radius:8px; }
 .stButton>button,.stDownloadButton>button { border-radius:6px; border:1px solid #35414c; background:#121a21; }
 hr { border-color:#202a33; }
 footer { visibility:hidden; }
+
+/* -------------------- Responsive / mobile styling -------------------- */
+@media (max-width: 900px) {
+    .block-container {
+        padding: 1rem 1rem 1.5rem !important;
+    }
+
+    h1 {
+        font-size: clamp(2.1rem, 7vw, 3rem) !important;
+        line-height: 1 !important;
+    }
+
+    h2 {
+        font-size: 1.55rem !important;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 1.25rem 1.15rem;
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba(8,11,14,.98), rgba(16,21,27,.96));
+    }
+
+    .hero-meta {
+        gap: .8rem 1.1rem;
+        font-size: .76rem;
+        margin-top: .9rem;
+    }
+
+    .metric-card {
+        padding: .85rem .9rem;
+        min-height: 88px;
+    }
+
+    .metric-value {
+        font-size: 1.35rem;
+        overflow-wrap: anywhere;
+    }
+
+    .section-title {
+        font-size: 1.45rem;
+        margin-bottom: .65rem;
+    }
+
+    .team-pill {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        font-size: .64rem;
+    }
+
+    .stButton > button,
+    .stDownloadButton > button {
+        min-height: 42px;
+        width: 100%;
+    }
+
+    div[data-testid="stDataFrame"] {
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .block-container {
+        padding: .7rem .65rem 1.1rem !important;
+    }
+
+    .hero {
+        padding: 1rem .9rem;
+        margin-bottom: .65rem;
+    }
+
+    .hero .kicker {
+        font-size: .62rem;
+        letter-spacing: .14em;
+    }
+
+    .hero h1 {
+        font-size: clamp(1.9rem, 9vw, 2.5rem) !important;
+        line-height: .98 !important;
+    }
+
+    .hero-meta {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: .55rem;
+        font-size: .75rem;
+        margin-top: .85rem;
+    }
+
+    .metric-card {
+        padding: .75rem .8rem;
+        min-height: 0;
+        margin-bottom: .2rem;
+    }
+
+    .metric-label {
+        font-size: .62rem;
+        letter-spacing: .06em;
+    }
+
+    .metric-value {
+        font-size: 1.3rem;
+    }
+
+    .section-title {
+        font-size: 1.35rem;
+        line-height: 1.1;
+    }
+
+    .driver-name {
+        font-size: .78rem;
+        overflow-wrap: anywhere;
+    }
+
+    /* Compact the six-column leaderboard rows for narrow phone screens.
+       Driver photo, rank and name remain visible; team and score details
+       are available in the contender cards and score-distribution chart. */
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) {
+        gap: .3rem !important;
+        align-items: center;
+    }
+
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(1) {
+        flex: 0 0 38px !important;
+        min-width: 38px !important;
+    }
+
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(2) {
+        flex: 0 0 18px !important;
+        min-width: 18px !important;
+    }
+
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(3) {
+        flex: 1 1 125px !important;
+        min-width: 0 !important;
+    }
+
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(4),
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(5),
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(6)) > div[data-testid="column"]:nth-child(6) {
+        display: none !important;
+    }
+
+    /* Keep top contender cards readable without forcing oversized images. */
+    div[data-testid="stHorizontalBlock"]:has(> div[data-testid="column"]:nth-child(2)) {
+        gap: .6rem;
+    }
+
+    section[data-testid="stSidebar"] .brand {
+        font-size: 1.55rem;
+    }
+
+    section[data-testid="stSidebar"] > div {
+        padding-top: 1rem;
+    }
+
+    .stTextInput input {
+        font-size: 16px !important;
+    }
+
+    footer {
+        visibility: hidden;
+    }
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -335,6 +500,8 @@ with st.sidebar:
 
     st.markdown(
         '<div class="sidebar-project-note">'
+        'A data-driven driver ranking built from historical race data, '
+        'recent form and machine learning.'
         '</div>',
         unsafe_allow_html=True,
     )
